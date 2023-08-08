@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #17181f;
+  color: #ddd;
+}
+
+main {
+  max-width: 360px;
+  margin: 30px auto;
+}
+h1 {
+  text-align: center;
+  color: white;
+  margin: 0;
+  font-size: 2.5rem;
+}
+h1 span {
+  font-size: 1rem;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+form {
+  margin-top: 20px;
+}
+form input {
+  width: 100%;
+  background-color: transparent;
+  color: #ddd;
+  border: 2px solid #30313d;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+form input[type="datetime-local"] {
+  color: #777;
+}
+form div.basic {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+form button {
+  width: 100%;
+  margin-top: 5px;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #ddd;
+}
+form button:hover {
+  background-color: #6c6e7c;
+  color: #cfcccc;
+  cursor: pointer;
+}
+div.transactions {
+  margin-top: 14px;
+}
+div.transaction {
+  display: flex;
+  padding: 5px 0;
+  justify-content: space-between;
+  border-top: 1px solid #30313d;
+}
+div.transaction:first-child {
+  border-top: 0;
+}
+div.transaction div.name {
+  font-size: 1rem;
+}
+div.transaction div.description,
+div.datetime {
+  font-size: 0.7rem;
+  color: #777;
+}
+div.right {
+  text-align: right;
+}
+div.price.green {
+  color: rgb(8, 152, 46);
+}
+
+div.price.red {
+  color: rgb(152, 46, 46);
+}
+
+.plus {
+  margin-right: 5px;
+}
+form input.error {
+  border-color: red;
+}
+/* In your App.css or separate CSS file */
+/* In your App.css or separate CSS file */
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333; /* Change to your desired background color */
+  width: 100px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.menu.active .dropdown-content {
+  display: block;
+}
+
+.dropdown-content button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px;
+  background-color: #333; /* Change to your desired background color */
+  color: white; /* Change to your desired text color */
+  border: none;
+  cursor: pointer;
+}
